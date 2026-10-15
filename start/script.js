@@ -98,7 +98,7 @@ console.log(dentroIntervallo(400));
 
 function epify(testo) {
 
-   if (testo.startsWith("Epicode")) { //controllo valore inziale stringa 
+   if (testo.startsWith("EPICODE")) { //controllo valore inziale stringa 
 
       return testo; // se valore corrisponde con la condizione lascio invariato
    }
@@ -127,9 +127,16 @@ console.log(`Il numero è divisibile per 3 o 7? ${divisibilePer3o7(21)}`)
    Suggerimento: split("") + for al contrario + join("").
 */
 
-function invertiStringa(testo) {
-   let 
+function invertiStringa(text) {
+   const letter = text.split("");
+   let reverse = "";
+
+   for (let i = letter.length - 1; i >= 0;  i--) {
+      reverse += letter[i];
+      }
+      return reverse;
 }
+console.log(invertiStringa("arrivederci"));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -140,7 +147,13 @@ function invertiStringa(testo) {
 */
 
 function inizialiMaiuscole(phrase) {
+   const letter = phrase.split(" ")
    
+   for (let i = 0; i < letter.length; i++) {
+      
+      letter[i] = letter[i].slice(0, 1).toUpperCase
+      
+   }
 }
 
 /* SCRIVI QUI LA TUA RISPOSTA */
