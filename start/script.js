@@ -148,10 +148,12 @@ console.log(invertiStringa("arrivederci"));
 
 function inizialiMaiuscole(phrase) {
    const letter = phrase.split(" ")
+   const maiuscole = [];
+   console.log(letter);
    
    for (let i = 0; i < letter.length; i++) {
       
-      letter[i] = letter[i].slice(0, 1).toUpperCase
+      maiuscole.push(letter)
       
    }
 }
@@ -162,6 +164,9 @@ function inizialiMaiuscole(phrase) {
    Funzione togliPrimoEUltimo(testo): rimuovi primo e ultimo carattere.
    Usa slice. Prova con "EPICODE".
 */
+function togliPrimoEUltimo(text) {
+   
+}
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -169,6 +174,19 @@ function inizialiMaiuscole(phrase) {
    Funzione dammiCasuali(n): ritorna un array di n numeri interi casuali tra 0 e 10 (inclusi).
    Usa Math.random e Math.floor.
 */
+
+function dammiCasuali(n){
+   const casuale = [];
+
+   for (let i = 0; i < n; i++) {
+      const numCas = Math.floor(Math.random() * 11);
+      casuale.push(numCas);
+      
+   }
+   return casuale;
+}
+
+console.log(dammiCasuali(1000));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -181,5 +199,9 @@ function inizialiMaiuscole(phrase) {
    - dividi per 1000 * 60 * 60 * 24 e Math.floor per i giorni interi
    Stampa: "Hai X giorni!"
 */
+
+function etaInGiorni(annoNascita, meseNascita, giornoNascita) {
+   
+}
 
 /* SCRIVI QUI LA TUA RISPOSTA */
