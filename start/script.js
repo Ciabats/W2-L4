@@ -76,11 +76,11 @@ function dentroIntervallo(n) {
          console.log("Non è dentro intervallo")
          break;
 
-         case n >= 20 && n <= 200:
+      case n >= 20 && n <= 200:
          console.log("È dentro intervallo")
          break;
 
-         case n === 400:
+      case n === 400:
          console.log("È dentro intervallo")
          break;
    }
@@ -96,13 +96,28 @@ console.log(dentroIntervallo(400));
    Usa startsWith.
 */
 
+function epify(testo) {
 
+   if (testo.startsWith("Epicode")) { //controllo valore inziale stringa 
+
+      return testo; // se valore corrisponde con la condizione lascio invariato
+   }
+   return "EPICODE" + testo; //altrimenti aggiungo il valore stringa necessario
+}
+
+console.log(epify(" è un corso duro"))
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 6 — divisibilePer3o7
    Funzione divisibilePer3o7(n): true se n positivo E divisibile per 3 O per 7.
 */
+
+function divisibilePer3o7(n) {
+   return n > 0 && (n % 3 === 0 || n % 7 === 0)
+}
+
+console.log(`Il numero è divisibile per 3 o 7? ${divisibilePer3o7(21)}`)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -112,6 +127,10 @@ console.log(dentroIntervallo(400));
    Suggerimento: split("") + for al contrario + join("").
 */
 
+function invertiStringa(testo) {
+   let 
+}
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 8 — inizialiMaiuscole
@@ -119,6 +138,10 @@ console.log(dentroIntervallo(400));
    "ciao mondo" → "Ciao Mondo".
    Suggerimento: split(" ") + for + slice(0,1).toUpperCase() + slice(1) + join(" ").
 */
+
+function inizialiMaiuscole(phrase) {
+   
+}
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
